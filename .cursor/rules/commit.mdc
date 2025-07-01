@@ -1,0 +1,10 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Generate convential commit messages
+
+- Review the `git-diff` and write a commit messages in the conventional commits format. 
+- Write an extremely detailed list of the file changes and the reason for the change in the commit message description. 
+- Add a list of changed files in the footer
