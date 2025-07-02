@@ -1,0 +1,99 @@
+// Font Families
+$font-family-primary:
+  "Inter",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  "Roboto",
+  "Oxygen",
+  "Ubuntu",
+  "Cantarell",
+  sans-serif;
+$font-family-secondary:
+  "Roboto",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  sans-serif;
+$font-family-display: "Playfair Display", Georgia, "Times New Roman", serif;
+
+// Font Weights
+$font-weight-thin: 100;
+$font-weight-extralight: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+$font-weight-black: 900;
+
+// Font Sizes
+$font-size-xs: 0.75rem; // 12px
+$font-size-sm: 0.875rem; // 14px
+$font-size-base: 1rem; // 16px
+$font-size-lg: 1.125rem; // 18px
+$font-size-xl: 1.25rem; // 20px
+$font-size-2xl: 1.5rem; // 24px
+$font-size-3xl: 1.875rem; // 30px
+$font-size-4xl: 2.25rem; // 36px
+$font-size-5xl: 3rem; // 48px
+$font-size-6xl: 3.75rem; // 60px
+$font-size-7xl: 4.5rem; // 72px
+$font-size-8xl: 6rem; // 96px
+$font-size-9xl: 8rem; // 128px
+
+// Line Heights
+$line-height-none: 1;
+$line-height-tight: 1.25;
+$line-height-snug: 1.375;
+$line-height-normal: 1.5;
+$line-height-relaxed: 1.625;
+$line-height-loose: 2;
+
+// Letter Spacing
+$letter-spacing-tighter: -0.05em;
+$letter-spacing-tight: -0.025em;
+$letter-spacing-normal: 0em;
+$letter-spacing-wide: 0.025em;
+$letter-spacing-wider: 0.05em;
+$letter-spacing-widest: 0.1em;
+
+// Text Transforms
+$text-transform-none: none;
+$text-transform-uppercase: uppercase;
+$text-transform-lowercase: lowercase;
+$text-transform-capitalize: capitalize;
+
+// Semantic Typography Scales
+// Display Typography - Large headings
+$display-font-family: $font-family-display;
+$display-font-weight: $font-weight-bold;
+$display-line-height: $line-height-tight;
+$display-letter-spacing: $letter-spacing-tight;
+
+// Heading Typography
+$heading-font-family: $font-family-primary;
+$heading-font-weight: $font-weight-semibold;
+$heading-line-height: $line-height-snug;
+$heading-letter-spacing: $letter-spacing-tight;
+
+// Body Typography
+$body-font-family: $font-family-primary;
+$body-font-weight: $font-weight-normal;
+$body-line-height: $line-height-relaxed;
+$body-letter-spacing: $letter-spacing-normal;
+
+// Caption Typography
+$caption-font-family: $font-family-secondary;
+$caption-font-weight: $font-weight-medium;
+$caption-line-height: $line-height-normal;
+$caption-letter-spacing: $letter-spacing-wide;
+
+// Specific Typography Tokens for HR Design
+$hero-title-size: $font-size-5xl;
+$hero-subtitle-size: $font-size-xl;
+$section-title-size: $font-size-3xl;
+$card-title-size: $font-size-lg;
+$button-text-size: $font-size-base;
+$nav-text-size: $font-size-base;

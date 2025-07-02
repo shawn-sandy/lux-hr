@@ -108,25 +108,21 @@ A minimal set of global styles for browser normalization and basic element styli
 - Use appropriate comment syntax for each format (/* */ for CSS, // for SCSS)
 - Ensure that the generated CSS is compatible with modern browsers
 - Use the following file structure for organizing the styles:
+- place generated files into src/styles
 
 ## File Structure
 
 ```
 src/
-└── ui/
+└── styles/
    ├── tokens/
-   │   ├── colors.css
-   │   ├── spacing.css
-   │   └── typography.css
+   │   ├── colors.css/scss
+   │   ├── spacing.css/scss
+   │   └── typography.css/scss
    ├── utilities/
-   │   ├── layout.css
-   │   ├── spacing.css
-   │   └── typography.css
-   ├── base.css
-   ├── style.css
-   └── documentation/
-      ├── README.md
-      ├── developer-documentation.html
-      ├── tokens.html
-      └── style-guide.html
+   │   ├── layout.css/scss
+   │   ├── spacing.css/scss
+   │   └── typography.css/scss
+   ├── base.css/scss
+   ├── style.css/scss
 ```

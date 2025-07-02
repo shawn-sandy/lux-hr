@@ -1,0 +1,209 @@
+// Typography Utility Classes
+
+// Font Families
+.font-primary {
+  font-family: $font-family-primary;
+}
+.font-secondary {
+  font-family: $font-family-secondary;
+}
+.font-display {
+  font-family: $font-family-display;
+}
+
+// Font Weights
+.font-thin {
+  font-weight: $font-weight-thin;
+}
+.font-extralight {
+  font-weight: $font-weight-extralight;
+}
+.font-light {
+  font-weight: $font-weight-light;
+}
+.font-normal {
+  font-weight: $font-weight-normal;
+}
+.font-medium {
+  font-weight: $font-weight-medium;
+}
+.font-semibold {
+  font-weight: $font-weight-semibold;
+}
+.font-bold {
+  font-weight: $font-weight-bold;
+}
+.font-extrabold {
+  font-weight: $font-weight-extrabold;
+}
+.font-black {
+  font-weight: $font-weight-black;
+}
+
+// Font Sizes
+.text-xs {
+  font-size: $font-size-xs;
+}
+.text-sm {
+  font-size: $font-size-sm;
+}
+.text-base {
+  font-size: $font-size-base;
+}
+.text-lg {
+  font-size: $font-size-lg;
+}
+.text-xl {
+  font-size: $font-size-xl;
+}
+.text-2xl {
+  font-size: $font-size-2xl;
+}
+.text-3xl {
+  font-size: $font-size-3xl;
+}
+.text-4xl {
+  font-size: $font-size-4xl;
+}
+.text-5xl {
+  font-size: $font-size-5xl;
+}
+.text-6xl {
+  font-size: $font-size-6xl;
+}
+
+// Line Heights
+.leading-none {
+  line-height: $line-height-none;
+}
+.leading-tight {
+  line-height: $line-height-tight;
+}
+.leading-snug {
+  line-height: $line-height-snug;
+}
+.leading-normal {
+  line-height: $line-height-normal;
+}
+.leading-relaxed {
+  line-height: $line-height-relaxed;
+}
+.leading-loose {
+  line-height: $line-height-loose;
+}
+
+// Text Alignment
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+
+// Text Transform
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.normal-case {
+  text-transform: none;
+}
+
+// Letter Spacing
+.tracking-tighter {
+  letter-spacing: $letter-spacing-tighter;
+}
+.tracking-tight {
+  letter-spacing: $letter-spacing-tight;
+}
+.tracking-normal {
+  letter-spacing: $letter-spacing-normal;
+}
+.tracking-wide {
+  letter-spacing: $letter-spacing-wide;
+}
+.tracking-wider {
+  letter-spacing: $letter-spacing-wider;
+}
+.tracking-widest {
+  letter-spacing: $letter-spacing-widest;
+}
+
+// Text Colors
+.text-primary {
+  color: $color-text-primary;
+}
+.text-secondary {
+  color: $color-text-secondary;
+}
+.text-muted {
+  color: $color-text-muted;
+}
+.text-inverse {
+  color: $color-text-inverse;
+}
+.text-accent {
+  color: $color-text-accent;
+}
+
+// Brand Color Text
+.text-brand-primary {
+  color: $color-primary;
+}
+.text-brand-primary-light {
+  color: $color-primary-light;
+}
+.text-brand-primary-dark {
+  color: $color-primary-dark;
+}
+.text-brand-secondary {
+  color: $color-secondary;
+}
+.text-brand-secondary-light {
+  color: $color-secondary-light;
+}
+.text-brand-secondary-dark {
+  color: $color-secondary-dark;
+}
+
+// Semantic Typography Classes for HR Design
+.hero-title {
+  font-family: $display-font-family;
+  font-size: $hero-title-size;
+  font-weight: $display-font-weight;
+  line-height: $display-line-height;
+  letter-spacing: $display-letter-spacing;
+}
+
+.section-title {
+  font-family: $heading-font-family;
+  font-size: $section-title-size;
+  font-weight: $heading-font-weight;
+  line-height: $heading-line-height;
+  letter-spacing: $heading-letter-spacing;
+}
+
+.card-title {
+  font-family: $heading-font-family;
+  font-size: $card-title-size;
+  font-weight: $heading-font-weight;
+  line-height: $heading-line-height;
+}
+
+.button-text {
+  font-family: $body-font-family;
+  font-size: $button-text-size;
+  font-weight: $font-weight-medium;
+  letter-spacing: $letter-spacing-normal;
+}

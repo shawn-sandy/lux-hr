@@ -1,0 +1,322 @@
+// HR Design System - Complete SCSS Framework
+
+// Import Design Tokens
+@use "./tokens/colors" as *;
+@use "./tokens/spacing" as *;
+@use "./tokens/typography" as *;
+
+// Import Base Styles
+@use "./base" as *;
+
+// Import Utility Classes
+@use "./utilities/layout" as *;
+@use "./utilities/spacing" as *;
+@use "./utilities/typography" as *;
+
+// HR-Specific Component Classes
+
+// Navigation Bar
+.navbar {
+  background-color: $color-background;
+  border-bottom: 1px solid $color-border;
+  padding: $spacing-4 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-brand {
+    font-family: $font-family-display;
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
+    color: $color-primary;
+    text-decoration: none;
+  }
+
+  &-nav {
+    display: flex;
+    gap: $spacing-8;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    a {
+      font-family: $font-family-primary;
+      font-size: $font-size-base;
+      font-weight: $font-weight-medium;
+      color: $color-text-secondary;
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+
+      &:hover,
+      &:focus {
+        color: $color-accent;
+      }
+    }
+  }
+}
+
+// Buttons
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $button-padding-y $button-padding-x;
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  font-weight: $font-weight-medium;
+  text-decoration: none;
+  border: none;
+  border-radius: $spacing-2;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &-primary {
+    background-color: $color-primary;
+    color: $color-text-inverse;
+
+    &:hover,
+    &:focus {
+      background-color: $color-primary-dark;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(107, 68, 35, 0.3);
+    }
+  }
+
+  &-secondary {
+    background-color: $color-accent;
+    color: $color-text-inverse;
+
+    &:hover,
+    &:focus {
+      background-color: $color-accent-dark;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+    }
+  }
+
+  &-outline {
+    background-color: transparent;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+
+    &:hover,
+    &:focus {
+      background-color: $color-primary;
+      color: $color-text-inverse;
+    }
+  }
+}
+
+// Cards
+.card {
+  background-color: $color-background;
+  border: 1px solid $color-border;
+  border-radius: $spacing-3;
+  padding: $card-padding;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border-color: $color-border-hover;
+  }
+
+  &-title {
+    font-family: $heading-font-family;
+    font-size: $card-title-size;
+    font-weight: $heading-font-weight;
+    color: $color-text-primary;
+    margin-bottom: $spacing-3;
+  }
+
+  &-text {
+    color: $color-text-secondary;
+    line-height: $line-height-relaxed;
+    margin-bottom: $spacing-4;
+  }
+
+  &-icon {
+    width: $spacing-12;
+    height: $spacing-12;
+    background-color: $color-accent;
+    border-radius: $spacing-2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: $spacing-4;
+  }
+}
+
+// Hero Section
+.hero {
+  background: linear-gradient(
+    135deg,
+    $color-primary-50 0%,
+    $color-background 100%
+  );
+  padding: $section-spacing-xl 0;
+
+  &-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing-12;
+    align-items: center;
+  }
+
+  &-title {
+    font-family: $display-font-family;
+    font-size: $hero-title-size;
+    font-weight: $display-font-weight;
+    line-height: $display-line-height;
+    color: $color-primary;
+    margin-bottom: $spacing-6;
+  }
+
+  &-subtitle {
+    font-size: $hero-subtitle-size;
+    color: $color-text-secondary;
+    line-height: $line-height-relaxed;
+    margin-bottom: $spacing-8;
+  }
+
+  &-image {
+    border-radius: $spacing-4;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
+
+// Services Section
+.services {
+  padding: $section-spacing-lg 0;
+  background-color: $color-primary;
+  color: $color-text-inverse;
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: $grid-gap-lg;
+    margin-top: $spacing-12;
+  }
+}
+
+.service-card {
+  background-color: $color-background;
+  color: $color-text-primary;
+  padding: $card-padding;
+  border-radius: $spacing-3;
+  text-align: center;
+}
+
+// Mission Section
+.mission {
+  padding: $section-spacing-lg 0;
+  background-color: $color-primary-900;
+  color: $color-text-inverse;
+  text-align: center;
+
+  &-title {
+    font-family: $display-font-family;
+    font-size: $section-title-size;
+    margin-bottom: $spacing-6;
+  }
+
+  &-text {
+    font-size: $font-size-lg;
+    line-height: $line-height-relaxed;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+// CTA Section
+.cta {
+  padding: $section-spacing-lg 0;
+  background-color: $color-surface;
+
+  &-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing-12;
+    align-items: center;
+  }
+
+  &-image {
+    border-radius: $spacing-4;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
+
+// Footer
+.footer {
+  background-color: $color-primary-900;
+  color: $color-text-inverse;
+  padding: $section-spacing-md 0;
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: $grid-gap-lg;
+  }
+
+  &-section {
+    h4 {
+      color: $color-text-inverse;
+      margin-bottom: $spacing-4;
+    }
+
+    a {
+      color: $color-neutral-300;
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .hero-content,
+  .cta-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: $font-size-4xl;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    .container {
+      flex-direction: column;
+      gap: $spacing-4;
+    }
+
+    &-nav {
+      gap: $spacing-4;
+    }
+  }
+}
